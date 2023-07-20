@@ -8,6 +8,10 @@ files:
       - afterinstall.sh
 
 hooks:
+ BeforeInstall:  # Replace the existing files before the installation script runs
+    - location: /rscripts/auth.json.sample.replace.sh
+      runAs: root
+      
   AfterInstall:
     - location: /afterinstall.sh
       runAs: root

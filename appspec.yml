@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/anyhow
+    exclude:
+      - appspec.yml
+
+hooks:
+  AfterInstall:
+    - location: /afterinsatll.sh
+      runas: root
+
+artifacts:
+  files:
+    - '**/*'  # Include all files in the build output
+  discard-paths: no

@@ -9,10 +9,11 @@ files:
 
 hooks:
   AfterInstall:
-    - location: /afterinsatll.sh
-      runas: root
+    - location: /afterinstall.sh
+      runAs: root
 
 artifacts:
   files:
     - '**/*'  # Include all files in the build output
   discard-paths: no
+

@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# Run necessary Magento commands
+# Change directory to /var/www/anyhow
+cd /var/www/anyhow
+
+# Run the commands inside /var/www/anyhow
 composer update
 
 php bin/magento maintenance:enable

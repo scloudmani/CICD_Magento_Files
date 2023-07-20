@@ -5,6 +5,7 @@ files:
     destination: /var/www/anyhow
     exclude:
       - appspec.yml
+      - afterinstall.sh
 
 hooks:
   AfterInstall:

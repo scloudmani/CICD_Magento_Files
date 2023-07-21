@@ -9,7 +9,7 @@ files:
 
 hooks:
   BeforeInstall:  # Replace the existing files before the installation script runs
-    - location: /rscripts/auth.json.sample.replace.sh
+    - location: /scripts/backup.sh
       runAs: root
 
   AfterInstall:

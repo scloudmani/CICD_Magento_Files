@@ -8,3 +8,6 @@ sudo php bin/magento setup:upgrade
 sudo php bin/magento setup:di:compile
 sudo php bin/magento setup:static-content:deploy -f
 sudo php bin/magento maintenance:disable
+# Change directory to /var/www/
+cd /var/www/
+sudo rm -rf anyhow_backup
